@@ -12,10 +12,6 @@
   },
   "author": "Aktarul Islam",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Aktarul/Authentication_and_Logins/issues"
-  },
-  "homepage": "https://github.com/Aktarul/Authentication_and_Logins#readme",
 
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
