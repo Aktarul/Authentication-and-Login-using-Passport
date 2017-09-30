@@ -38,6 +38,13 @@ module.exports = function(app, passport) {
         req.logout();
         res.redirect('/');
     });
+
+    app.get('/auth/google', passport.authenticate('google', {scope : ['profile' , 'email']}));
+
+    app.get('/auth/google/callback', passport.authenticate('google', {
+        successRedirect : '/profile',
+        failureRedirect : '/'
+    }));
 };
 
 // route middleware to make sure a user is logged in

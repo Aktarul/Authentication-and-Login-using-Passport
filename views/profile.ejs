@@ -24,7 +24,7 @@
             <div class="well">
                 <h3><span class="fa fa-user"></span> Local</h3>
 
-                <% if (user.local.email) { %>
+            <!--    <% if (user.local.email) { %>    -->
                 <p>
                     <strong>id</strong>: <%= user._id %><br>
                     <strong>email</strong>: <%= user.local.email %><br>
@@ -88,27 +88,25 @@
         </div>
         -->
         <!-- GOOGLE INFORMATION -->
-        <!--
         <div class="col-sm-6">
             <div class="well">
                 <h3 class="text-danger"><span class="fa fa-google-plus"></span> Google+</h3>
 
-                <% if (user.google.token) { %>
+            <!--    <% if (user.google.token) { %>     -->
                 <p>
                     <strong>id</strong>: <%= user.google.id %><br>
                     <strong>token</strong>: <%= user.google.token %><br>
                     <strong>email</strong>: <%= user.google.email %><br>
                     <strong>name</strong>: <%= user.google.name %>
                 </p>
-
+            <!--
                 <a href="/unlink/google" class="btn btn-danger">Unlink</a>
                 <% } else { %>
                 <a href="/connect/google" class="btn btn-danger">Connect Google</a>
                 <% } %>
-
+            -->
             </div>
         </div>
-        -->
     </div>
 
 </div>
