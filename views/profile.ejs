@@ -39,14 +39,38 @@
             </div>
         </div>
 
+        <!-- GOOGLE INFORMATION -->
+        <div class="col-sm-6">
+            <div class="well">
+                <h3 class="text-danger"><span class="fa fa-google-plus"></span> Google+</h3>
+
+                <!--    <% if (user.google.token) { %>     -->
+                <p>
+                    <strong>id</strong>: <%= user.google.id %><br>
+                    <strong>token</strong>: <%= user.google.token %><br>
+                    <strong>email</strong>: <%= user.google.email %><br>
+                    <strong>name</strong>: <%= user.google.name %>
+                </p>
+                <!--
+                <a href="/unlink/google" class="btn btn-danger">Unlink</a>
+                <% } else { %>
+                <a href="/connect/google" class="btn btn-danger">Connect Google</a>
+                <% } %>
+            -->
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
 
         <!-- FACEBOOK INFORMATION -->
-        <!--
+
         <div class="col-sm-6">
             <div class="well">
                 <h3 class="text-primary"><span class="fa fa-facebook"></span> Facebook</h3>
 
-                <% if (user.facebook.token) { %>
+                <!--        <% if (user.facebook.token) { %>      -->
                 <p>
                     <strong>id</strong>: <%= user.facebook.id %><br>
                     <strong>token</strong>: <%= user.facebook.token %><br>
@@ -54,16 +78,14 @@
                     <strong>name</strong>: <%= user.facebook.name %><br>
                 </p>
 
-                <a href="/unlink/facebook" class="btn btn-primary">Unlink</a>
+                <!--       <a href="/unlink/facebook" class="btn btn-primary">Unlink</a>
                 <% } else { %>
                 <a href="/connect/facebook" class="btn btn-primary">Connect Facebook</a>
                 <% } %>
-
+         -->
             </div>
         </div>
-    </div>
-    -->
-    <div class="row">
+
 
         <!-- TWITTER INFORMATION -->
         <!--
@@ -87,26 +109,6 @@
             </div>
         </div>
         -->
-        <!-- GOOGLE INFORMATION -->
-        <div class="col-sm-6">
-            <div class="well">
-                <h3 class="text-danger"><span class="fa fa-google-plus"></span> Google+</h3>
-
-            <!--    <% if (user.google.token) { %>     -->
-                <p>
-                    <strong>id</strong>: <%= user.google.id %><br>
-                    <strong>token</strong>: <%= user.google.token %><br>
-                    <strong>email</strong>: <%= user.google.email %><br>
-                    <strong>name</strong>: <%= user.google.name %>
-                </p>
-            <!--
-                <a href="/unlink/google" class="btn btn-danger">Unlink</a>
-                <% } else { %>
-                <a href="/connect/google" class="btn btn-danger">Connect Google</a>
-                <% } %>
-            -->
-            </div>
-        </div>
     </div>
 
 </div>
